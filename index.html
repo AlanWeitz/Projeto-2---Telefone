@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 2 - Telefone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <img src="./imagens/zapzap.png" alt="Whatsapp logo">
+        <h1 class="Titulo-Cabeçalho">Agenda Telefônica</h1>  
+    </header>
+    <form id="formulario">
+        <input type="text" id="nome" placeholder="Nome Completo" required>
+        <input type="tel" id="telefone" placeholder="Número de Telefone" required minlength="10" maxlength="11">
+        <button type="submit">Enviar</button>
+    </form>
+    <table cellspacing="10">
+        <thead>
+            <tr>
+                <th class="nomec">NOME DO CONTATO</th>
+                <th>NÚMERO DO CONTATO</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-contatos">
+            <tr>
+
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
